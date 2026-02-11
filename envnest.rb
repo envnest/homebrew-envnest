@@ -5,20 +5,20 @@
 class Envnest < Formula
   desc "Secure environment variable management for teams and CI/CD."
   homepage "https://github.com/envnest/envnest-cli"
-  version "0.1.0"
+  version "0.1.0-rc.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/envnest/envnest-cli/releases/download/v0.1.0/envnest_0.1.0_darwin_amd64.tar.gz"
-      sha256 "1ab31a436c934ee1f79a4bd2cf54a6c5533d88e16d0f421c473817d5ed5c97a3"
+      url "https://github.com/envnest/envnest-cli/releases/download/v0.1.0-rc.1/envnest_0.1.0-rc.1_darwin_amd64.tar.gz"
+      sha256 "5a53192c807dc083990ae19d160b0df3c16f4523cf1e47e986ad568a660a2e3a"
 
       def install
         bin.install "envnest"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/envnest/envnest-cli/releases/download/v0.1.0/envnest_0.1.0_darwin_arm64.tar.gz"
-      sha256 "aca5ae5cbf291b05e5a88e3777b1d4005053deea89124fe6018233de67c86e74"
+      url "https://github.com/envnest/envnest-cli/releases/download/v0.1.0-rc.1/envnest_0.1.0-rc.1_darwin_arm64.tar.gz"
+      sha256 "e4e48038b109d198268532e047b47761a2af8a99904b675b67572c1ff0ca7c0e"
 
       def install
         bin.install "envnest"
@@ -28,15 +28,15 @@ class Envnest < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/envnest/envnest-cli/releases/download/v0.1.0/envnest_0.1.0_linux_amd64.tar.gz"
-      sha256 "25c50afdf22b0a5a2fc618432e4debb11371812f5aba5576da103d66ac3950fa"
+      url "https://github.com/envnest/envnest-cli/releases/download/v0.1.0-rc.1/envnest_0.1.0-rc.1_linux_amd64.tar.gz"
+      sha256 "f609853126666c5716db6649a6a5ad465e8910efe49639a427d2822363ac7779"
       def install
         bin.install "envnest"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/envnest/envnest-cli/releases/download/v0.1.0/envnest_0.1.0_linux_arm64.tar.gz"
-      sha256 "54339d0256b7da8fe197b6a5d71e6dd91ef68263d671808eae185bca41715061"
+      url "https://github.com/envnest/envnest-cli/releases/download/v0.1.0-rc.1/envnest_0.1.0-rc.1_linux_arm64.tar.gz"
+      sha256 "79f3d64471d0386a4fe9ec097b260f78f2a4dd14115a933c9f702048e4db9573"
       def install
         bin.install "envnest"
       end
