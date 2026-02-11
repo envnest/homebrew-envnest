@@ -5,20 +5,20 @@
 class Envnest < Formula
   desc "Secure environment variable management for teams and CI/CD."
   homepage "https://github.com/envnest/envnest-cli"
-  version "0.1.0-rc.4"
+  version "0.1.0-rc.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://dl.envnest.dev/cli/v0.1.0-rc.4/envnest_0.1.0-rc.4_darwin_amd64.tar.gz"
-      sha256 "610d77f8f1cfb7f886640bf31647fc57e98262f304bae5caa9c0e01eb3248c93"
+      url "https://dl.envnest.dev/cli/v0.1.0-rc.5/envnest_0.1.0-rc.5_darwin_amd64.tar.gz"
+      sha256 "c16b951fa14056f226041b489cf47caa8ddef98acf13d2d218a1d70bedec905d"
 
       def install
         bin.install "envnest"
       end
     end
     if Hardware::CPU.arm?
-      url "https://dl.envnest.dev/cli/v0.1.0-rc.4/envnest_0.1.0-rc.4_darwin_arm64.tar.gz"
-      sha256 "7206596b80eb0aecbc1748ada4e09ab7e08099c54b62f7edd3b2ef5508b59ade"
+      url "https://dl.envnest.dev/cli/v0.1.0-rc.5/envnest_0.1.0-rc.5_darwin_arm64.tar.gz"
+      sha256 "d0c736dae0dd57432e7584abb3657438e0a4f89c0706055926e3daff3c0f3d8a"
 
       def install
         bin.install "envnest"
@@ -28,15 +28,15 @@ class Envnest < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://dl.envnest.dev/cli/v0.1.0-rc.4/envnest_0.1.0-rc.4_linux_amd64.tar.gz"
-      sha256 "727b6b3546c112b6ad384845f7e63747b4c12387104781d34a331b4f9d7ac54f"
+      url "https://dl.envnest.dev/cli/v0.1.0-rc.5/envnest_0.1.0-rc.5_linux_amd64.tar.gz"
+      sha256 "0a334e868924e7a344533557168208d218d9e71c0f9c42b072ec931738093827"
       def install
         bin.install "envnest"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://dl.envnest.dev/cli/v0.1.0-rc.4/envnest_0.1.0-rc.4_linux_arm64.tar.gz"
-      sha256 "15cf4b044e4111a778149a0847b88db29e4e86979a66908ef9b790a0ab856d21"
+      url "https://dl.envnest.dev/cli/v0.1.0-rc.5/envnest_0.1.0-rc.5_linux_arm64.tar.gz"
+      sha256 "3b84a3d404b3bde66a8ea11a8be374891c5eac1043aaef79eb262aaf6082f318"
       def install
         bin.install "envnest"
       end
