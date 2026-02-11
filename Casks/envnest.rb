@@ -3,7 +3,7 @@ cask "envnest" do
   name "envnest"
   desc "Secure environment variable management for teams and CI/CD."
   homepage "https://github.com/envnest/envnest-cli"
-  version "0.1.0-rc.2"
+  version "0.1.0-rc.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,23 +13,23 @@ cask "envnest" do
 
   on_macos do
     on_intel do
-      url "https://dl.envnest.com/cli/v#{version}/envnest_#{version}_darwin_amd64.tar.gz"
-      sha256 "5ba8d5278c1745204cdd6185f7403a9e73bb24f31504f5dda983bf5e2db251c9"
+      url "https://dl.envnest.dev/cli/v#{version}/envnest_#{version}_darwin_amd64.tar.gz"
+      sha256 "028adfba4d5113d59184ed2ad45b51b86ad163b346ee7cb7fcd35f07a4b3f7b5"
     end
     on_arm do
-      url "https://dl.envnest.com/cli/v#{version}/envnest_#{version}_darwin_arm64.tar.gz"
-      sha256 "874c032aa0f75c40507ed5a50d32a982a366519896f3a77e69f821793657e1de"
+      url "https://dl.envnest.dev/cli/v#{version}/envnest_#{version}_darwin_arm64.tar.gz"
+      sha256 "b92db62333b7dc452d13ae0cf0be0b1aec190b7ef73244513c761620133f54fc"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://dl.envnest.com/cli/v#{version}/envnest_#{version}_linux_amd64.tar.gz"
-      sha256 "c6bca2c228db7a20c11fe550eed26f3fbeed0b9cdca86f5bca47e34737ccb836"
+      url "https://dl.envnest.dev/cli/v#{version}/envnest_#{version}_linux_amd64.tar.gz"
+      sha256 "e4de99b2b98e56c9ae1ecdde48c8038d706c2a6ebcf0d14f01158d29770e6aa1"
     end
     on_arm do
-      url "https://dl.envnest.com/cli/v#{version}/envnest_#{version}_linux_arm64.tar.gz"
-      sha256 "f82eab2957363cd930dd6bafd95adabe9d7f211567d29a30eb2f815eef568e47"
+      url "https://dl.envnest.dev/cli/v#{version}/envnest_#{version}_linux_arm64.tar.gz"
+      sha256 "1059a37e47beffb0cff90a72e9d4ad29b1b7af9958a24fd6b1e55376ff5aba13"
     end
   end
 
